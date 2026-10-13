@@ -1,16 +1,33 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# SEGMP
+## Student Enrollment and Grade Management Protocol
 
-Currently, two official plugins are available:
+SEGMP is a web-based student enrollment and grade management system developed as an academic simulator project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Features
+- Student enrollment with password protection
+- Student details stored in a MySQL database
+- Search student results using roll number
+- Display subject-wise marks, grades, and results
+- Calculate SGPA using the project's defined formula
 
-## React Compiler
+### Technologies Used
+- React.js
+- Vite
+- Node.js
+- Express.js
+- MySQL
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Project Structure
+- `src/` - React frontend
+- `backend/` - Express backend and database connection
+- `public/` - Public assets
 
-## Expanding the Oxlint configuration
+### Running the Project
+1. Install Node.js and MySQL.
+2. Install frontend dependencies using `npm install`.
+3. Install backend dependencies by running `npm install` inside `backend/`.
+4. Configure your local database credentials in `backend/.env`.
+5. Start the backend and frontend in separate terminals.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+**Note:** Never upload your `.env` file or database credentials to GitHub.
